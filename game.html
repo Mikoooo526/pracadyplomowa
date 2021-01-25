@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mikołaj Michałek -Quiz</title> 
+    <link rel="stylesheet" href="game.css" />
+  </head>
+
+  <body>
+    <div class="container">    
+      <div id="game" class="justify-center flex-column hidden">
+        <div id="interface">
+          <div id="interface-item">
+            <p id="progressText" class="interface-prefix">
+              Pytanie
+            </p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+          <div id="interface-item">
+            <p class="interface-prefix">
+              Punkty
+            </p>
+            <h1 class="interface-main-text" id="score">
+              0
+            </h1>
+          </div>
+        </div>
+        <h2 id="question"></h2>
+        <div class="choice-div">
+          <p class="choice-letter">A</p>
+          <p class="choice-text" data-number="1"></p>
+        </div>
+        <div class="choice-div">
+          <p class="choice-letter">B</p>
+          <p class="choice-text" data-number="2"></p>
+        </div>
+        <div class="choice-div">
+          <p class="choice-letter">C</p>
+          <p class="choice-text" data-number="3"></p>
+        </div>
+        <div class="choice-div">
+          <p class="choice-letter">D</p>
+          <p class="choice-text" data-number="4"></p>
+        </div>
+      </div>
+    </div>
+    <script src="gra.js"></script>
+  </body>
+</html>

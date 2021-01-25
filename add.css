@@ -1,0 +1,275 @@
+:root{
+    background-color: whitesmoke;
+    
+}
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5.5rem;
+  color: orange;
+  margin-bottom: 1rem;
+ 
+  
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  
+
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+ 
+  .button {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 22rem;
+    text-align: center;
+    border: 0.1rem solid peachpuff;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color:orange;
+    background-color: white;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #9b8509;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+
+
+
+
+  .navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin: .5rem;
+    color: white;
+}
+
+.navbar-links {
+    height: 100%;
+    font-size: 1rem;
+}
+
+.navbar-links ul {
+    display: flex;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    
+}
+
+.navbar-links li:hover {
+    background-color:rgb(80, 79, 79);
+}
+
+.hamburger {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+#question {
+    margin-bottom: 1rem;
+    width: 48rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 0 0.1rem 0.4rem 0  black;
+    ;
+  }
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+label{
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      font-style: bold;
+      margin-top: 1rem;
+  }
+.label-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1rem;
+    margin: 20px 0;
+    margin-right: 5rem;
+    
+  }
+.answer{
+    margin-bottom: 1rem;
+    width: 18rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 0 0.1rem 0.4rem 0  black;
+}
+table { 
+  margin: 0 auto; 
+  font-size: large; 
+  border: 1px solid black; 
+}  
+
+td { 
+  background-color: #E4F5D4; 
+  border: 1px solid black; 
+} 
+
+th, 
+td { 
+  font-weight: bold; 
+  border: 1px solid black; 
+  padding: 10px; 
+  text-align: center; 
+} 
+
+td { 
+  font-weight: lighter; 
+} 
+.label2{
+  
+      font-size: 1.5rem;
+      font-style: bold;
+     
+}
+.number{
+     margin-bottom: 1rem;
+    width: 8rem;
+    padding: 1rem;
+    font-size: 0.5rem;
+    border: none;
+    box-shadow: 0 0.1rem 0.4rem 0  black;
+}
+
+.login{
+  margin:  2rem; 
+}
+.profile {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: -10rem auto;
+}
+select {
+  margin-bottom: 1rem;
+}
+.select {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}

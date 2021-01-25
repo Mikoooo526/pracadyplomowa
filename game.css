@@ -1,0 +1,132 @@
+:root {
+  background-color: whitesmoke;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+
+h1 {
+  font-size: 5.4rem;
+  color: orange;
+  margin-bottom: 5rem;
+}
+
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.choice-div {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid grey;
+  background-color: white;
+}
+
+.choice-div:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 #9b8509;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-letter {
+  padding: 1.5rem 2.5rem;
+  background-color:orange;
+  color: black;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: red;
+}
+
+
+
+#interface {
+  display: flex;
+  justify-content: space-between;
+}
+
+.interface-prefix {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.interface-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 45rem;
+  height: 4rem;
+  border: 0.4rem solid black;
+  margin-top: 1rem;
+}
+
+#progressBarFull {
+  height: 3.2rem;
+  background-color: orange;
+  width: 0%;
+}
+
+/*
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+/*
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
