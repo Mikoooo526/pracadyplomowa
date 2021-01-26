@@ -1,1 +1,1 @@
-# pracadyplomowa
+# Praca Dyplomowa
